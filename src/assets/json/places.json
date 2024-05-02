@@ -18,6 +18,12 @@
                 "location": "Galway Bay",
                 "description": "Sightseeing, Day Trips",
                 "expanded": "The Aran Islands are located just off Galway and Doolin. A true Irish experience awaits, locals speak Irish as well as English in a setting of Celtic churches of historical significance. The Aran Islands are a great choice for special holiday"
+            },
+            {
+                "name": "Connemara National Park",
+                "location": "Letterfrack, Co. Galway, Ireland",
+                "description": "Scenic landscapes, Wildlife",
+                "expanded": "Discover the rugged beauty of Connemara National Park, located on the western coast of Ireland. Explore scenic hiking trails, spot diverse wildlife, and marvel at breathtaking landscapes including mountains, bogs, and woodlands."
             }
         ],
         "restaurants": [
@@ -64,12 +70,6 @@
                 "location": "Abbeygate St, Galway",
                 "description": "Nightclub, Bar, Club",
                 "expanded": "Electric is one of Galway's most popular nightclubs, located in the heart of the city. Known for its vibrant atmosphere and great music, Electric is a must-visit spot for party-goers in Galway."
-            },
-            {
-                "name": "Connemara National Park",
-                "location": "Letterfrack, Co. Galway, Ireland",
-                "description": "Scenic landscapes, Wildlife",
-                "expanded": "Discover the rugged beauty of Connemara National Park, located on the western coast of Ireland. Explore scenic hiking trails, spot diverse wildlife, and marvel at breathtaking landscapes including mountains, bogs, and woodlands."
             },
             {
                 "name": "Palas",

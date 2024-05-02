@@ -1,7 +1,35 @@
-.radio-label {
-    display: flex;
-  //  justify-content: space-between;
-    margin-left: 230px; /* Push radio button to the right */
-
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Choose appropriate color */
+  }
+  
+  .content-container {
+    padding: 20px;
+  }
+  .questions{
+    margin-left: 10px; /* Adjust the value according to your preference */
+    margin-right: 10px; /* Adjust the value according to your preference */
+  
+}
+  
+  .question-container {
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-size: 18px;
+    color: #555; /* Choose appropriate color */
+    margin-bottom: 10px;
+  }
+  
+  .radio-group {
+    margin-left: 10px;
+  }
+  
+  .save-button {
+    margin-top: 20px;
+    background-color: #007bff; /* Choose appropriate color */
+    color: #fff; /* Choose appropriate color */
   }
   

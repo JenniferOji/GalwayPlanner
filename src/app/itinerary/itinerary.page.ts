@@ -27,15 +27,23 @@ export class ItineraryPage {
 
   landmarksChoice: string = '';
   landmarkImage: string = "";
+  landmarkDescription: string = '';
+
 
   resturauntChoice: string = "";
   resturauntImage: string = "";
+  resturauntDescription: string = '';
+
 
   activityChoice: string = "";
   activityImage: string = "";
+  activityDescription: string = '';
+
 
   eveningChoice: string = "";
   eveningImage: string = "";
+  eveningDescription: string = '';
+
 
   constructor(private storage: Storage) { }
   async ionViewWillEnter() {
@@ -50,10 +58,13 @@ export class ItineraryPage {
       switch (randomNumber) {
         case 1:
           this.landmarksChoice = "Kylemore Abbey";
+          this.landmarkDescription = "Begin your day with a visit to Kylemore Abbey! Surrounded by lush greenery, this historic site offers a glimpse into Ireland's past. Explore the beautiful gardens and capture memorable moments against the abbey's majestic backdrop.";
           this.landmarkImage = "https://i.pinimg.com/originals/ab/46/10/ab461063aad4d54b3d50b52a9b99ad12.jpg"
+
           break;
         case 2:
           this.landmarksChoice = "Galway Cathedral";
+          this.landmarkDescription = "Marvel at the awe-inspiring Galway Cathedral! Admire the stunning architecture and intricate stained glass windows inside this sacred space.";
           this.landmarkImage = "https://www.agoda.com/wp-content/uploads/2020/02/Galway-Cathedral-things-to-do-in-Galway-Ireland.jpg"
           break;
         default:
@@ -66,7 +77,14 @@ export class ItineraryPage {
       switch (randomNumber) {
         case 1:
           this.landmarksChoice = "Aran Islands";
+          this.landmarkDescription = "Escape to the scenic Aran Islands! Discover hidden coves, cycle along coastal trails, and indulge in fresh seafood while immersing yourself in Gaelic culture.";
           this.landmarkImage = "https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/e23de216-1621-4f09-98a4-769678d2304c/ugc-jdodonncada-na-seacht-dteampaill-aran-islands-galway.jpg"
+          break;
+
+        case 2:
+          this.activityChoice = "Connemara National Park";
+          this.activityDescription = "Explore the breathtaking landscapes of Connemara National Park! Hike scenic trails, spot native wildlife, and soak in panoramic views of rolling hills and rugged coastline.";
+          this.activityImage = "https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/da37b066-aac9-44fe-b778-6970b6317271/header-connemara-galway.jpg"
           break;
         default:
           this.landmarksChoice = "Unknown outcome";
@@ -80,6 +98,7 @@ export class ItineraryPage {
       switch (randomNumber) {
         case 1:
           this.resturauntChoice = "Oscars Seafood Bistro";
+          this.resturauntDescription = "Indulge in a culinary adventure at Oscar's Seafood Bistro! Dive into delectable seafood dishes crafted with locally sourced ingredients.";
           this.resturauntImage = "https://1.bp.blogspot.com/-c6OMzcJHxDc/Xv5Rut1RNEI/AAAAAAABng8/nKKYfJEtIRMdw3WpwymwM13Y2iAzESnDwCK4BGAsYHg/s3211/20200702_214704.jpg"
           break;
         default:
@@ -93,11 +112,13 @@ export class ItineraryPage {
       switch (randomNumber) {
         case 1:
           this.resturauntChoice = "The Cellar Bar and Resturaunt";
+          this.resturauntDescription = "Savor the cozy ambiance and delicious fare at The Cellar Bar and Restaurant. Treat yourself to hearty Irish classics and signature cocktails in a charming setting.";
           this.resturauntImage = "https://thisisgalway.ie/wp-content/uploads/2023/07/the-cellar-1.jpg"
           break;
         case 2:
           this.resturauntChoice = "An Pucan";
-          this.resturauntImage = "https://www.tripadvisor.ie/Restaurant_Review-g186609-d2325103-Reviews-An_Pucan_Bar_Restaurant-Galway_County_Galway_Western_Ireland.html"
+          this.resturauntDescription = "Experience the vibrant atmosphere of An Pucan! Enjoy traditional Irish pub grub and live music while mingling with locals and fellow travelers.";
+          this.resturauntImage = "https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/f5/76/1f/we-cannot-wait-to-welcome.jpg"
           break;
         default:
           this.resturauntChoice = "Unknown outcome";
@@ -106,15 +127,12 @@ export class ItineraryPage {
     }
 
     if (this.myStatus3 === 'outdoor') {
-      const randomNumber = Math.floor(Math.random() * 2) + 1;
+      const randomNumber = Math.floor(Math.random() * 1) + 1;
       switch (randomNumber) {
         case 1:
           this.activityChoice = "Wildlands";
+          this.activityDescription = "Embark on an outdoor adventure at Wildlands! Zip through treetop canopies, conquer challenging obstacles, and immerse yourself in nature's playground.";
           this.activityImage = "https://scdn.aro.ie/Sites/50/wildlands2020/uploads/images/panelsquareimages44/panelimagessquaresmall31/zip-n-trek-panel.png"
-          break;
-        case 2:
-          this.activityChoice = "Connemara National Park";
-          this.activityImage = "https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/da37b066-aac9-44fe-b778-6970b6317271/header-connemara-galway.jpg"
           break;
         default:
           this.activityChoice = "Unknown outcome";
@@ -127,10 +145,12 @@ export class ItineraryPage {
       switch (randomNumber) {
         case 1:
           this.activityChoice = "Galway Museum";
+          this.activityDescription = "Uncover Galway's rich history at the Galway Museum! Delve into captivating exhibits showcasing the city's cultural heritage and archaeological treasures.";
           this.activityImage = "https://th.bing.com/th/id/OIP._8vjD-S5T41Zeqc0AySIZgHaE8?rs=1&pid=ImgDetMain"
           break;
         case 2:
           this.activityChoice = "Great Escape Rooms";
+          this.activityDescription = "Test your wits and teamwork at the Great Escape Rooms! Solve puzzles, crack codes, and race against the clock to escape themed rooms filled with mystery and excitement.";
           this.activityImage = "https://fatamorgana.es/content/images/21/720x432e90nn0/90531511133458.jpg"
           break;
         default:
@@ -145,6 +165,7 @@ export class ItineraryPage {
       switch (randomNumber) {
         case 1:
           this.eveningChoice = "Palas";
+          this.eveningDescription = "Wind down your day with a cozy movie night at Palas! Grab some popcorn, sink into plush seats, and enjoy the latest blockbuster in this stylish cinema.";
           this.eveningImage = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/58/cc/23/palas-located-in-the.jpg?w=1200&h=-1&s=1"
           break;
         default:
@@ -158,6 +179,7 @@ export class ItineraryPage {
       switch (randomNumber) {
         case 1:
           this.eveningChoice = "Electric Nightclub";
+          this.eveningDescription = "If you still have energy, dance the night away at Electric Nightclub! Immerse yourself in pulsating beats, vibrant lights, and electric atmosphere as you make unforgettable memories on the dance floor.";
           this.eveningImage = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/42/5f/75/you-can-chill-out-in.jpg?w=1200&h=-1&s=1"
           break;
         default:

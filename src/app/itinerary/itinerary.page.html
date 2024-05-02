@@ -13,18 +13,59 @@
       <ion-title size="large">Itinerary</ion-title>
     </ion-toolbar>
   </ion-header>
- 
-  <P>{{landmarksChoice}}</P>
-  <img *ngIf="landmarkImage" [src]="landmarkImage" alt="Landmark Image">
-  <br>
-  <P>{{resturauntChoice}}</P>
-  <img *ngIf="resturauntImage" [src]="resturauntImage" alt="resturaunt Image">
-  <br>
-  <P>{{activityChoice}}</P>
-  <img *ngIf="activityImage" [src]="activityImage" alt="activity Image">
-  <br>
-  <P>{{eveningChoice}}</P>
-  <img *ngIf="eveningImage" [src]="eveningImage" alt="evening Image">
-  <br>
-  
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-content>
+            <p>{{landmarksChoice}}</p>
+            <p>{{landmarkDescription}}</p>
+            <img *ngIf="landmarkImage" [src]="landmarkImage" alt="Landmark Image" width="300" height="150">
+            <br>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-content>
+            <p>{{resturauntChoice}}</p>
+            <p>{{resturauntDescription}}</p>
+            <img *ngIf="resturauntImage" [src]="resturauntImage" alt="resturaunt Image" width="300" height="150">
+            <br>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-content>
+            <p>{{activityChoice}}</p>
+            <p>{{activityDescription}}</p>
+            <img *ngIf="activityImage" [src]="activityImage" alt="activity Image" width="300" height="150">
+            <br>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-content>
+            <p>{{eveningChoice}}</p>
+            <p>{{eveningDescription}}</p>
+            <img *ngIf="eveningImage" [src]="eveningImage" alt="evening Image" width="300" height="150">
+            <br>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>

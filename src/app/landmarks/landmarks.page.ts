@@ -45,6 +45,9 @@ export class LandmarksPage implements OnInit {
     } else if (placeName === 'Aran Islands'){
       return 'https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/e23de216-1621-4f09-98a4-769678d2304c/ugc-jdodonncada-na-seacht-dteampaill-aran-islands-galway.jpg'
     }
+    else if (placeName === 'Connemara National Park'){
+      return 'https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/da37b066-aac9-44fe-b778-6970b6317271/header-connemara-galway.jpg'
+    }
     else {
       return ''; 
     }
@@ -69,6 +72,11 @@ export class LandmarksPage implements OnInit {
       if(placeName === 'Aran Islands'){
         Browser.open({
           url: 'https://www.tripadvisor.ie/AttractionProductReview-g186609-d14085523-Aran_Islands_and_Cliffs_of_Moher_Cruise_from_Galway-Galway_County_Galway_Western_I.html'
+        });
+      }
+      if(placeName === 'Connemara National Park'){
+        Browser.open({
+          url: 'https://www.tripadvisor.ie/Attraction_Review-g186609-d546269-Reviews-Connemara_National_Park_Visitor_Centre-Galway_County_Galway_Western_Ireland.html'
         });
       }
       
