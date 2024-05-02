@@ -13,9 +13,18 @@
       <ion-title size="large">Itinerary</ion-title>
     </ion-toolbar>
   </ion-header>
-  <h3>Your latest status: {{myStatus}}</h3>
-  <h3>Your latest status: {{myStatus2}}</h3>
-  <h3>Your latest status: {{myStatus3}}</h3>
-
-
+ 
+  <P>{{landmarksChoice}}</P>
+  <img *ngIf="landmarkImage" [src]="landmarkImage" alt="Landmark Image">
+  <br>
+  <P>{{resturauntChoice}}</P>
+  <img *ngIf="resturauntImage" [src]="resturauntImage" alt="resturaunt Image">
+  <br>
+  <P>{{activityChoice}}</P>
+  <img *ngIf="activityImage" [src]="activityImage" alt="activity Image">
+  <br>
+  <P>{{eveningChoice}}</P>
+  <img *ngIf="eveningImage" [src]="eveningImage" alt="evening Image">
+  <br>
+  
 </ion-content>

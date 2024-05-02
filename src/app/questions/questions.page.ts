@@ -20,8 +20,7 @@ export class QuestionsPage implements OnInit {
   myStatus: string = "";
   myStatus2: string = "";
   myStatus3: string = "";
-
-
+  myStatus4: string = "";
 
   constructor(private storage: Storage, private router: Router) { }
 
@@ -30,15 +29,14 @@ export class QuestionsPage implements OnInit {
     this.myStatus = await this.storage.get('status');
     this.myStatus2 = await this.storage.get('status2');
     this.myStatus3 = await this.storage.get('status3');
-
-
+    this.myStatus4 = await this.storage.get('status4');
     }
 
     async saveStatus() {
       await this.storage.set('status', this.myStatus)
       await this.storage.set('status2', this.myStatus2)
       await this.storage.set('status3', this.myStatus3)
-
+      await this.storage.set('status4', this.myStatus4)
 
       .then(
       ()=>{

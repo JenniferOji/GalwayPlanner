@@ -25,6 +25,7 @@
       <ion-radio slot="end" value="natural"></ion-radio>
     </ion-item>
   </ion-radio-group>
+  <br>
   <h6>2. Are you adventurous when it comes to trying new cuisines or do you prefer sticking to
     familiar dishes?</h6>
     <ion-radio-group [(ngModel)]="myStatus2">
@@ -37,6 +38,7 @@
         <ion-radio slot="end" value="familiar"></ion-radio>
       </ion-item>
     </ion-radio-group>
+    <br>
     <h6>3. Are you more inclined towards outdoor activities, or do you prefer
        indoor experiences?</h6>
       <ion-radio-group [(ngModel)]="myStatus3">
@@ -49,8 +51,21 @@
           <ion-radio slot="end" value="indoor"></ion-radio>
         </ion-item>
       </ion-radio-group>
-      <ion-button (click)="saveStatus()">Save</ion-button>
-
+      <br>
+      <h6>4. Would you rather have a cozy evening or enjoy the nightlife?</h6>
+       <ion-radio-group [(ngModel)]="myStatus4">
+         <ion-item>
+           <ion-label>Cozy</ion-label>
+           <ion-radio slot="end" value="cozy"></ion-radio>
+         </ion-item>
+         <ion-item>
+           <ion-label>Nightlife</ion-label>
+           <ion-radio slot="end" value="nightlife"></ion-radio>
+         </ion-item>
+       </ion-radio-group>
+       <br>
+       <ion-button expand="block" (click)="saveStatus()">Save</ion-button>
+ 
   <h4></h4>
   <h4></h4>
 </ion-content>

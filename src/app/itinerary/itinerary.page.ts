@@ -25,6 +25,17 @@ export class ItineraryPage {
   myStatus3: string = "";
   myStatus4: string = "";
 
+  landmarksChoice: string = '';
+  landmarkImage: string = "";
+
+  resturauntChoice: string = "";
+  resturauntImage: string = "";
+
+  activityChoice: string = "";
+  activityImage: string = "";
+
+  eveningChoice: string = "";
+  eveningImage: string = "";
 
   constructor(private storage: Storage) { }
   async ionViewWillEnter() {
@@ -33,6 +44,127 @@ export class ItineraryPage {
     this.myStatus2 = await this.storage.get('status2');
     this.myStatus3 = await this.storage.get('status3');
     this.myStatus4 = await this.storage.get('status4');
+
+    if (this.myStatus === 'historical') {
+      const randomNumber = Math.floor(Math.random() * 2) + 1;
+      switch (randomNumber) {
+        case 1:
+          this.landmarksChoice = "Kylemore Abbey";
+          this.landmarkImage = "https://i.pinimg.com/originals/ab/46/10/ab461063aad4d54b3d50b52a9b99ad12.jpg"
+          break;
+        case 2:
+          this.landmarksChoice = "Galway Cathedral";
+          this.landmarkImage = "https://www.agoda.com/wp-content/uploads/2020/02/Galway-Cathedral-things-to-do-in-Galway-Ireland.jpg"
+          break;
+        default:
+          this.landmarksChoice = "Unknown outcome";
+          break;
+      }
+    }
+    else if (this.myStatus === 'natural') {
+      const randomNumber = Math.floor(Math.random() * 1) + 1;
+      switch (randomNumber) {
+        case 1:
+          this.landmarksChoice = "Aran Islands";
+          this.landmarkImage = "https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/e23de216-1621-4f09-98a4-769678d2304c/ugc-jdodonncada-na-seacht-dteampaill-aran-islands-galway.jpg"
+          break;
+        default:
+          this.landmarksChoice = "Unknown outcome";
+          break;
+      }
+
+    }
+
+    if (this.myStatus2 === 'adventurous') {
+      const randomNumber = Math.floor(Math.random() * 1) + 1;
+      switch (randomNumber) {
+        case 1:
+          this.resturauntChoice = "Oscars Seafood Bistro";
+          this.resturauntImage = "https://1.bp.blogspot.com/-c6OMzcJHxDc/Xv5Rut1RNEI/AAAAAAABng8/nKKYfJEtIRMdw3WpwymwM13Y2iAzESnDwCK4BGAsYHg/s3211/20200702_214704.jpg"
+          break;
+        default:
+          this.resturauntChoice = "Unknown outcome";
+          break;
+      }
+    }
+
+    else if (this.myStatus2 === 'familiar') {
+      const randomNumber = Math.floor(Math.random() * 2) + 1;
+      switch (randomNumber) {
+        case 1:
+          this.resturauntChoice = "The Cellar Bar and Resturaunt";
+          this.resturauntImage = "https://thisisgalway.ie/wp-content/uploads/2023/07/the-cellar-1.jpg"
+          break;
+        case 2:
+          this.resturauntChoice = "An Pucan";
+          this.resturauntImage = "https://www.tripadvisor.ie/Restaurant_Review-g186609-d2325103-Reviews-An_Pucan_Bar_Restaurant-Galway_County_Galway_Western_Ireland.html"
+          break;
+        default:
+          this.resturauntChoice = "Unknown outcome";
+          break;
+      }
+    }
+
+    if (this.myStatus3 === 'outdoor') {
+      const randomNumber = Math.floor(Math.random() * 2) + 1;
+      switch (randomNumber) {
+        case 1:
+          this.activityChoice = "Wildlands";
+          this.activityImage = "https://scdn.aro.ie/Sites/50/wildlands2020/uploads/images/panelsquareimages44/panelimagessquaresmall31/zip-n-trek-panel.png"
+          break;
+        case 2:
+          this.activityChoice = "Connemara National Park";
+          this.activityImage = "https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/da37b066-aac9-44fe-b778-6970b6317271/header-connemara-galway.jpg"
+          break;
+        default:
+          this.activityChoice = "Unknown outcome";
+          break;
+      }
+    }
+
+    else if (this.myStatus3 === 'indoor') {
+      const randomNumber = Math.floor(Math.random() * 2) + 1;
+      switch (randomNumber) {
+        case 1:
+          this.activityChoice = "Galway Museum";
+          this.activityImage = "https://th.bing.com/th/id/OIP._8vjD-S5T41Zeqc0AySIZgHaE8?rs=1&pid=ImgDetMain"
+          break;
+        case 2:
+          this.activityChoice = "Great Escape Rooms";
+          this.activityImage = "https://fatamorgana.es/content/images/21/720x432e90nn0/90531511133458.jpg"
+          break;
+        default:
+          this.activityChoice = "Unknown outcome";
+          break;
+      }
+    }
+
+
+    if (this.myStatus4 === 'cozy') {
+      const randomNumber = Math.floor(Math.random() * 1) + 1;
+      switch (randomNumber) {
+        case 1:
+          this.eveningChoice = "Palas";
+          this.eveningImage = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/58/cc/23/palas-located-in-the.jpg?w=1200&h=-1&s=1"
+          break;
+        default:
+          this.eveningChoice = "Unknown outcome";
+          break;
+      }
+    }
+
+    else if (this.myStatus4 === 'nightlife') {
+      const randomNumber = Math.floor(Math.random() * 1) + 1;
+      switch (randomNumber) {
+        case 1:
+          this.eveningChoice = "Electric Nightclub";
+          this.eveningImage = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/42/5f/75/you-can-chill-out-in.jpg?w=1200&h=-1&s=1"
+          break;
+        default:
+          this.eveningChoice = "Unknown outcome";
+          break;
+      }
+    }
 
 
 
