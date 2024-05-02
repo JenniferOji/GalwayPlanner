@@ -18,16 +18,28 @@ import { Storage } from '@ionic/storage-angular';
   })
 export class QuestionsPage implements OnInit {
   myStatus: string = "";
+  myStatus2: string = "";
+  myStatus3: string = "";
+
+
 
   constructor(private storage: Storage, private router: Router) { }
 
   async ionViewWillEnter() {
     await this.storage.create();
     this.myStatus = await this.storage.get('status');
+    this.myStatus2 = await this.storage.get('status2');
+    this.myStatus3 = await this.storage.get('status3');
+
+
     }
 
     async saveStatus() {
       await this.storage.set('status', this.myStatus)
+      await this.storage.set('status2', this.myStatus2)
+      await this.storage.set('status3', this.myStatus3)
+
+
       .then(
       ()=>{
       this.router.navigate(['/itinerary'])

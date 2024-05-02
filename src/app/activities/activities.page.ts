@@ -50,6 +50,12 @@ export class ActivitiesPage implements OnInit {
     }
     else if (placeName === 'Electric Nightclub'){
       return 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/42/5f/75/you-can-chill-out-in.jpg?w=1200&h=-1&s=1'
+    } 
+    else if (placeName === 'Connemara National Park'){
+      return 'https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/da37b066-aac9-44fe-b778-6970b6317271/header-connemara-galway.jpg'
+    }
+    else if (placeName === 'Palas'){
+      return 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/58/cc/23/palas-located-in-the.jpg?w=1200&h=-1&s=1'
     }
     else {
       return ''; 
@@ -80,6 +86,16 @@ export class ActivitiesPage implements OnInit {
       if(placeName === 'Electric'){
         Browser.open({
           url: 'https://www.tripadvisor.ie/Attraction_Review-g186609-d7264273-Reviews-Electric-Galway_County_Galway_Western_Ireland.html'
+        });
+      }
+      if(placeName === 'Connemara National Park'){
+        Browser.open({
+          url: 'https://www.tripadvisor.ie/Attraction_Review-g186609-d546269-Reviews-Connemara_National_Park_Visitor_Centre-Galway_County_Galway_Western_Ireland.html'
+        });
+      }
+      if(placeName === 'Palas'){
+        Browser.open({
+          url: 'https://www.tripadvisor.ie/Attraction_Review-g186609-d14174343-Reviews-Palas_Cinema-Galway_County_Galway_Western_Ireland.html'
         });
       }
     } catch (error) {

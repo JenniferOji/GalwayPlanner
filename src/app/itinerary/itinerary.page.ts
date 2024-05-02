@@ -21,10 +21,20 @@ import { Storage } from '@ionic/storage-angular';
 export class ItineraryPage {
 
   myStatus: string = "";
+  myStatus2: string = "";
+  myStatus3: string = "";
+  myStatus4: string = "";
+
+
   constructor(private storage: Storage) { }
   async ionViewWillEnter() {
     await this.storage.create();
     this.myStatus = await this.storage.get('status');
+    this.myStatus2 = await this.storage.get('status2');
+    this.myStatus3 = await this.storage.get('status3');
+    this.myStatus4 = await this.storage.get('status4');
+
+
 
   }
 

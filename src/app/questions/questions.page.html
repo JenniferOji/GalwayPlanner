@@ -13,30 +13,7 @@
       <ion-title size="large">Questions</ion-title>
     </ion-toolbar>
   </ion-header>
-  <h3>Current status is {{myStatus}}</h3>
-  <ion-list>
-    <ion-radio-group [(ngModel)]="myStatus">
-      <ion-item>
-        <ion-label>Happy</ion-label>
-        <ion-radio slot="end" value="happy"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>sad</ion-label>
-        <ion-radio slot="end" value="sad"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>Energetic</ion-label>
-        <ion-radio slot="end" value="energetic"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>Lazy</ion-label>
-        <ion-radio slot="end" value="lazy"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
-  </ion-list>
-  <ion-button (click)="saveStatus()">Save</ion-button>
-
-
+ 
   <h6>1. Are you more drawn to historical landmarks or natural attractions</h6>
   <ion-radio-group [(ngModel)]="myStatus">
     <ion-item>
@@ -50,6 +27,30 @@
   </ion-radio-group>
   <h6>2. Are you adventurous when it comes to trying new cuisines or do you prefer sticking to
     familiar dishes?</h6>
+    <ion-radio-group [(ngModel)]="myStatus2">
+      <ion-item>
+        <ion-label>Adventurous</ion-label>
+        <ion-radio slot="end" value="adventurous"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Familiar</ion-label>
+        <ion-radio slot="end" value="familiar"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+    <h6>3. Are you more inclined towards outdoor activities, or do you prefer
+       indoor experiences?</h6>
+      <ion-radio-group [(ngModel)]="myStatus3">
+        <ion-item>
+          <ion-label>Outdoor</ion-label>
+          <ion-radio slot="end" value="outdoor"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Indoor</ion-label>
+          <ion-radio slot="end" value="indoor"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <ion-button (click)="saveStatus()">Save</ion-button>
+
   <h4></h4>
   <h4></h4>
 </ion-content>
