@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Questions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Questions</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h3>Current status is {{myStatus}}</h3>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="myStatus">
+      <ion-item>
+        <ion-label>Happy</ion-label>
+        <ion-radio slot="end" value="happy"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>sad</ion-label>
+        <ion-radio slot="end" value="sad"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Energetic</ion-label>
+        <ion-radio slot="end" value="energetic"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Lazy</ion-label>
+        <ion-radio slot="end" value="lazy"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="saveStatus()">Save</ion-button>
+
+
+  <h6>1. Are you more drawn to historical landmarks or natural attractions</h6>
+  <ion-radio-group [(ngModel)]="myStatus">
+    <ion-item>
+      <ion-label>Historical</ion-label>
+      <ion-radio slot="end" value="historical"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Natural</ion-label>
+      <ion-radio slot="end" value="natural"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  <h6>2. Are you adventurous when it comes to trying new cuisines or do you prefer sticking to
+    familiar dishes?</h6>
+  <h4></h4>
+  <h4></h4>
+</ion-content>

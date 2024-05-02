@@ -1,0 +1,7 @@
+{
+  "name": "Galway-Planner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

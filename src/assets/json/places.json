@@ -1,0 +1,76 @@
+{
+    "places": {
+        "landmarks": [
+            {
+                "name": "Kylemore Abbey",
+                "location": "Connemara Co.Galway",
+                "description": "Historic Sites, Castles, Gardens",
+                "expanded": "Set in a dramatic landscape, Kylemore is an ideal destination for a day out. Kylemore is steeped in history and tales of tragedy, romance, engineering initiatives, model farms, royal visits, spirituality, and education. Experience the Victorian atmosphere of the restored rooms of the Abbey and neo-Gothic church. "
+            },
+            {
+                "name": "Galway Cathedral",
+                "location": "Galway City",
+                "description": "Impressive Roman Catholic cathedral",
+                "expanded": "Galway Cathedral, which was dedicated in 1965, was the last major stone cathedral to be built in Europe. Located in the heart of Galway City, the cathedral boasts an impressive variety of interior art, such as statues, mosaics and stained glass."
+            },
+            {
+                "name": "Aran Islands",
+                "location": "Galway Bay",
+                "description": "Sightseeing, Day Trips",
+                "expanded": "The Aran Islands are located just off Galway and Doolin. A true Irish experience awaits, locals speak Irish as well as English in a setting of Celtic churches of historical significance. The Aran Islands are a great choice for special holiday"
+            },
+            {
+                "name": "Connemara National Park",
+                "location": "Letterfrack, Co. Galway, Ireland",
+                "description": "Scenic landscapes, Wildlife",
+                "expanded": "Discover the rugged beauty of Connemara National Park, located on the western coast of Ireland. Explore scenic hiking trails, spot diverse wildlife, and marvel at breathtaking landscapes including mountains, bogs, and woodlands."
+            }
+        ],
+        "restaurants": [
+            {
+                "name": "An Pucan",
+                "location": "Galway City",
+                "cuisine": "Irish, Bar, European, Pub",
+                "expanded": "The award-winning An Púcán is a real crowd-pleaser. Found just off the iconic Eyre Square, on Forster Street, this bar has been drawing crowds for a long time, thanks to its delicious grub, cracking cocktails, and unforgettable atmosphere."
+            },
+            {
+                "name": "Oscars",
+                "location": "Galway City",
+                "cuisine": "Local cuisine, Irish, Seafood, Healthy",
+                "expanded": "Oscars is a perfect bistro to enjoy a selection of real local foods in particular the Seafood freshly caught off the coast of Galway and sourced from local fishermen and the best of Galways fishmongers."
+            },
+            {
+                "name": "The Cellar Bar and Resturaunt",
+                "location": "Galway City",
+                "cuisine": "Irish cuisine, Bar, Vegetarian Friendly",
+                "expanded": "The Cellar Bar has grown into a local favorite, with the emphasis being on comfort, value and entertainment. The Cellar Bar’s famous food menu offers a diverse range of meals for every taste and budget, and will ensure you never leave hungry."
+            }
+        ],
+        "activities": [
+            {
+                "name": "Wildlands Galway",
+                "location": "Connemara, Co. Galway",
+                "description": "Zipline, Aerial Adventure Parks",
+                "expanded": "Experience thrilling adventure activities at Wildlands Galway. Test your skills on the high ropes course, navigate through treetop obstacles, and zoom down zip lines. Enjoy outdoor fun for all ages with activities such as archery, climbing walls, and nature walks."
+            },
+            {
+                "name": "Great Escape Rooms",
+                "location": "Abbeygate St, Galway",
+                "description": "Escape Games, Thrill ",
+                "expanded": "Enter the world of mystery and intrigue at Great Escape Rooms Galway. Choose from a variety of immersive escape room experiences and put your problem-solving skills to the test. Work together with your team to uncover clues, solve puzzles, and escape before time runs out!"          
+            },
+            {
+                "name": "Galway City Museum",
+                "location": "Spanish Parade, Galway, Ireland",
+                "description": "Monuments, History, Museums",
+                "expanded": "Explore the history, heritage, and culture of Galway City and the surrounding area. The museum features exhibits on archaeology, history, and art, with a focus on the city's maritime history and the Claddagh fishing community."
+            },
+            {
+                "name": "Electric Nightclub",
+                "location": "Abbeygate St, Galway",
+                "description": "Nightclub, Bar, Club",
+                "expanded": "Electric is one of Galway's most popular nightclubs, located in the heart of the city. Known for its vibrant atmosphere and great music, Electric is a must-visit spot for party-goers in Galway."
+            }
+        ]
+    }
+}

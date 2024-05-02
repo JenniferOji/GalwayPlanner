@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Galway Planner
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Galway Planner</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <img src="https://www.travelandleisure.com/thmb/KNZ-K9xuEayKTu7PK-PvlqLsCOw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cliffs-of-moher-county-clare-ireland-MOHER0321-22e98a06687e4e73a347d99e13ea6f94.jpg" height="150" width="357">
+    <ion-button expand="block" color="medium" style="font-size:12px;" [routerLink]="['/landmarks']">See Landmarks</ion-button>
+  </div>
+
+  <div>
+    <img src="https://theworldpursuit.com/wp-content/uploads/2022/06/An-Pucan-1536x1024.jpeg" height="150" width="357">
+    <ion-button expand="block" color="medium" [routerLink]="['/restaurants']" style="font-size:  12px;" >See Resturaunts</ion-button>
+
+  </div>
+
+  <div>
+    <img src="https://uploads.nialler9.com/wp-content/uploads/2021/11/25201948/93777835_3040950962628506_287959767442259968_n-e1637871658754.jpeg" height="150" width="357">
+    <ion-button expand="block" color="medium" [routerLink]="['/activities']" style="font-size:  12px;" >See activities</ion-button>
+  </div>
+
+  <div style="text-align: center; margin-top: 15px;">
+    <ion-button class="oval-button" color="tertiary"  [routerLink]="['/questions']" style="font-size: 15px;">CREATE PLANNER</ion-button>
+  </div>
+</ion-content>
+
+
