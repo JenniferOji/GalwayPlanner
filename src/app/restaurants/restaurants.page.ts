@@ -46,6 +46,15 @@ export class RestaurantsPage implements OnInit {
     else if (placeName === 'An Pucan') {
       return 'https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/f5/76/1f/we-cannot-wait-to-welcome.jpg';
     }
+    else if (placeName === 'The Jungle Cafe') {
+      return 'https://i2-prod.galwaybeo.ie/incoming/article5877726.ece/ALTERNATES/s615/1_Jungle-Cafe-Galway-Facebook.jpg';
+    }
+    else if (placeName === 'Cafe Nero') {
+      return 'https://coffeeshops.ie/wp-content/uploads/2023/09/Caffe-Nero-Galway-City-min.jpg';
+    }
+    else if (placeName === 'Tomodachi') {
+      return 'https://c1.staticflickr.com/5/4467/37860029986_7c4a314b6b_b.jpg';
+    }
     else {
       return ''; 
     }
@@ -70,6 +79,21 @@ export class RestaurantsPage implements OnInit {
       if(placeName === 'An Pucan'){
         Browser.open({
           url: 'https://www.tripadvisor.ie/Restaurant_Review-g186609-d2325103-Reviews-An_Pucan_Bar_Restaurant-Galway_County_Galway_Western_Ireland.html'
+        });
+      }
+      if(placeName === 'The Jungle Cafe'){
+        Browser.open({
+          url: '//https://www.tripadvisor.ie/Restaurant_Review-g186609-d3806097-Reviews-Jungle_Cafe_Galway-Galway_County_Galway_Western_Ireland.html'
+        });
+      }
+      if(placeName === 'Cafe Nero'){
+        Browser.open({
+          url: 'https://www.tripadvisor.com/ShowUserReviews-g186609-d15669293-r937617006-Caffe_Nero-Galway_County_Galway_Western_Ireland.html'
+        });
+      }
+      if(placeName === 'Tomodachi'){
+        Browser.open({
+          url: 'https://www.tripadvisor.com/Restaurant_Review-g186609-d11913503-Reviews-Tomodachi_Sushi_Bar-Galway_County_Galway_Western_Ireland.html'
         });
       }
     } catch (error) {

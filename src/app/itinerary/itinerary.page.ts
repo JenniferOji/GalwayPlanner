@@ -24,6 +24,8 @@ export class ItineraryPage {
   myStatus2: string = "";
   myStatus3: string = "";
   myStatus4: string = "";
+  myStatus5: string = "";
+
 
   landmarksChoice: string = '';
   landmarkImage: string = "";
@@ -44,6 +46,10 @@ export class ItineraryPage {
   eveningImage: string = "";
   eveningDescription: string = '';
 
+  cafeChoice: string = "";
+  cafeImage: string = "";
+  cafeDescription: string = '';
+
 
   constructor(private storage: Storage) { }
   async ionViewWillEnter() {
@@ -52,9 +58,38 @@ export class ItineraryPage {
     this.myStatus2 = await this.storage.get('status2');
     this.myStatus3 = await this.storage.get('status3');
     this.myStatus4 = await this.storage.get('status4');
+    this.myStatus5 = await this.storage.get('status5');
+
+    if (this.myStatus5 === 'hidden') {
+      const randomNumber = Math.floor(Math.random() * 1) + 1;
+      switch (randomNumber) {
+        case 1:
+          this.cafeChoice = "The Jungle Cafe";
+          this.cafeDescription = "Wind down your day with a cozy movie night at Palas! Grab some popcorn, sink into plush seats, and enjoy the latest blockbuster in this stylish cinema.";
+          this.cafeImage = "https://i2-prod.galwaybeo.ie/incoming/article5877726.ece/ALTERNATES/s615/1_Jungle-Cafe-Galway-Facebook.jpg"
+          break;
+        default:
+          this.cafeChoice = "Unknown outcome";
+          break;
+      }
+    }
+
+    else if (this.myStatus5 === 'known') {
+      const randomNumber = Math.floor(Math.random() * 1) + 1;
+      switch (randomNumber) {
+        case 1:
+          this.eveningChoice = "Nero Cafe";
+          this.eveningDescription = "If you still have energy, dance the night away at Electric Nightclub! Immerse yourself in pulsating beats, vibrant lights, and electric atmosphere as you make unforgettable memories on the dance floor.";
+          this.eveningImage = "https://coffeeshops.ie/wp-content/uploads/2023/09/Caffe-Nero-Galway-City-min.jpg"
+          break;
+        default:
+          this.eveningChoice = "Unknown outcome";
+          break;
+      }
+    }
 
     if (this.myStatus === 'historical') {
-      const randomNumber = Math.floor(Math.random() * 2) + 1;
+      const randomNumber = Math.floor(Math.random() * 3) + 1;
       switch (randomNumber) {
         case 1:
           this.landmarksChoice = "Kylemore Abbey";
@@ -67,13 +102,18 @@ export class ItineraryPage {
           this.landmarkDescription = "Marvel at the awe-inspiring Galway Cathedral! Admire the stunning architecture and intricate stained glass windows inside this sacred space.";
           this.landmarkImage = "https://www.agoda.com/wp-content/uploads/2020/02/Galway-Cathedral-things-to-do-in-Galway-Ireland.jpg"
           break;
+        case 3:
+          this.landmarksChoice = "Lynchs Castle";
+          this.landmarkDescription = "Marvel at the awe-inspiring Galway Cathedral! Admire the stunning architecture and intricate stained glass windows inside this sacred space.";
+          this.landmarkImage = "https://irishhistory.com/wp-content/uploads/2023/04/Galway-Galway-City-Lynchs-Castle-900x600.jpg"
+          break;
         default:
           this.landmarksChoice = "Unknown outcome";
           break;
       }
     }
     else if (this.myStatus === 'natural') {
-      const randomNumber = Math.floor(Math.random() * 1) + 1;
+      const randomNumber = Math.floor(Math.random() * 3) + 1;
       switch (randomNumber) {
         case 1:
           this.landmarksChoice = "Aran Islands";
@@ -86,6 +126,11 @@ export class ItineraryPage {
           this.activityDescription = "Explore the breathtaking landscapes of Connemara National Park! Hike scenic trails, spot native wildlife, and soak in panoramic views of rolling hills and rugged coastline.";
           this.activityImage = "https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/da37b066-aac9-44fe-b778-6970b6317271/header-connemara-galway.jpg"
           break;
+        case 3:
+          this.activityChoice = "Salthill Promenade";
+          this.activityDescription = "Explore the breathtaking landscapes of Connemara National Park! Hike scenic trails, spot native wildlife, and soak in panoramic views of rolling hills and rugged coastline.";
+          this.activityImage = "https://www.wildatlanticwayonline.com/wp-content/uploads/2018/04/Salthill-Galway-Wild-Atlantic-Way-11.jpg"
+          break;
         default:
           this.landmarksChoice = "Unknown outcome";
           break;
@@ -94,13 +139,18 @@ export class ItineraryPage {
     }
 
     if (this.myStatus2 === 'adventurous') {
-      const randomNumber = Math.floor(Math.random() * 1) + 1;
+      const randomNumber = Math.floor(Math.random() * 2) + 1;
       switch (randomNumber) {
         case 1:
           this.resturauntChoice = "Oscars Seafood Bistro";
           this.resturauntDescription = "Indulge in a culinary adventure at Oscar's Seafood Bistro! Dive into delectable seafood dishes crafted with locally sourced ingredients.";
           this.resturauntImage = "https://1.bp.blogspot.com/-c6OMzcJHxDc/Xv5Rut1RNEI/AAAAAAABng8/nKKYfJEtIRMdw3WpwymwM13Y2iAzESnDwCK4BGAsYHg/s3211/20200702_214704.jpg"
           break;
+          case 2:
+            this.resturauntChoice = "Tomodachi";
+            this.resturauntDescription = "Indulge in a culinary adventure at Oscar's Seafood Bistro! Dive into delectable seafood dishes crafted with locally sourced ingredients.";
+            this.resturauntImage = "https://c1.staticflickr.com/5/4467/37860029986_7c4a314b6b_b.jpg"
+            break;
         default:
           this.resturauntChoice = "Unknown outcome";
           break;

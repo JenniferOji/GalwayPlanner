@@ -24,7 +24,19 @@
                 "location": "Letterfrack, Co. Galway, Ireland",
                 "description": "Scenic landscapes, Wildlife",
                 "expanded": "Discover the rugged beauty of Connemara National Park, located on the western coast of Ireland. Explore scenic hiking trails, spot diverse wildlife, and marvel at breathtaking landscapes including mountains, bogs, and woodlands."
-            }
+            },
+            {
+                "name": "Lynchs Castle",
+                "location": "Shop Street, Galway City",
+                "description": "Historical, Castle",
+                "expanded": "Lynch's Castle is a medieval fortified house located on Shop Street in the heart of Galway city. Built in the 16th century by the Lynch family, one of the fourteen Tribes of Galway, the castle is renowned for its elaborate Gothic-style architecture and rich history. It served as both a residential dwelling and a symbol of the Lynch family's wealth and influence in Galway. Today, Lynch's Castle stands as a cherished heritage site, offering visitors a glimpse into Galway's medieval past."
+            },
+            {
+                "name": "Salthill Promenade",
+                "location": "Salthill, Galway City",
+                "description": "Coast Line Walk, Beach",
+                "expanded": "Enjoy a leisurely stroll along the picturesque Salthill Promenade, offering breathtaking views of Galway Bay and the majestic Atlantic Ocean.Immerse yourself in the soothing sounds of the waves as they rhythmically caress the sandy beaches, while the salty sea breeze invigorates your senses"
+                }
         ],
         "restaurants": [
             {
@@ -44,7 +56,25 @@
                 "location": "Galway City",
                 "cuisine": "Irish cuisine, Bar, Vegetarian Friendly",
                 "expanded": "The Cellar Bar has grown into a local favorite, with the emphasis being on comfort, value and entertainment. The Cellar Bar’s famous food menu offers a diverse range of meals for every taste and budget, and will ensure you never leave hungry."
-            }
+            },
+            {
+                "name": "The Jungle Cafe",
+                "location": "Galway City",
+                "cuisine": "Cafe, Quick Bites",
+                "expanded": "Step into a lush, jungle-inspired ambiance where every corner reveals delightful surprises. Enjoy freshly brewed artisanal coffee, mouthwatering pastries, and delectable light bites. Perfect for catching up with friends or unwinding after a busy day. Let the urban jungle adventure begin!"
+            },
+            {
+                "name": "Cafe Nero",
+                "location": "Galway City",
+                "cuisine": "Cafe, European",
+                "expanded": "Experience the warmth of Italian hospitality in the heart of Galway. Indulge in rich espresso blends, expertly crafted pastries, and savory sandwiches. Whether you're seeking a quick caffeine fix or a cozy spot to linger over a book, Café Nero offers the perfect retreat. Join us for a taste of la dolce vita!"
+            },
+            {
+                "name": "Tomodachi",
+                "location": "Galway City",
+                "cuisine": "Sushi, Japanese",
+                "expanded": "Tomodachi is a cozy Japanese eatery nestled in the heart of Galway, offering a wide array of authentic Japanese dishes, including sushi, sashimi, ramen, and bento boxes. With its warm ambiance and friendly staff, Tomodachi provides a delightful dining experience that transports guests to the vibrant streets of Japan."
+                }
         ],
         "activities": [
             {
@@ -57,7 +87,7 @@
                 "name": "Great Escape Rooms",
                 "location": "Abbeygate St, Galway",
                 "description": "Escape Games, Thrill ",
-                "expanded": "Enter the world of mystery and intrigue at Great Escape Rooms Galway. Choose from a variety of immersive escape room experiences and put your problem-solving skills to the test. Work together with your team to uncover clues, solve puzzles, and escape before time runs out!"          
+                "expanded": "Enter the world of mystery and intrigue at Great Escape Rooms Galway. Choose from a variety of immersive escape room experiences and put your problem-solving skills to the test. Work together with your team to uncover clues, solve puzzles, and escape before time runs out!"
             },
             {
                 "name": "Galway City Museum",
@@ -76,7 +106,7 @@
                 "location": "Eyre Square, Galway City",
                 "description": "Cinema, Special Screenings",
                 "expanded": "Palas is a three screen arthouse cinema and cultural space in the UNESCO city of film - Galway. Palas is a concrete monolith, five storey over double-height basement housing a three-screen independent cinema, a beautiful bar and restaurant for you to enjoy with your fellow film-lovers."
-              }
+            }
         ]
     }
 }

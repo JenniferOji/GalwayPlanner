@@ -67,6 +67,19 @@
          </ion-item>
        </ion-radio-group>
        <br>
+       <h5 class="questions">Question 5</h5>
+       <h6 class="questions">Would you prefer to discover a hidden gem café or opt for a more well-known establishment?</h6>
+        <ion-radio-group [(ngModel)]="myStatus5">
+          <ion-item>
+            <ion-label>Hidden Gem</ion-label>
+            <ion-radio slot="end" value="hidden"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Well-Known</ion-label>
+            <ion-radio slot="end" value="known"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+        <br>
        <ion-button expand="block" (click)="saveStatus()">Save</ion-button>
  
   <h4></h4>
