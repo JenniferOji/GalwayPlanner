@@ -29,7 +29,7 @@ export class LandmarksPage implements OnInit {
 
   getData() {
     this.type = history.state.type; 
-    const url = 'assets/json/places.json'; 
+    const url = 'https://www.jsonblob.com/api/jsonBlob/1236060427271397376'; 
     this.http.get<any>(url).subscribe(data => {
       this.places = data.places.landmarks; 
       console.log(this.places);

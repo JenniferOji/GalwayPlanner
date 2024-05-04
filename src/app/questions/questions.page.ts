@@ -3,9 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader,
 IonItem, IonLabel, IonList, IonRadio, IonRadioGroup, IonRow, IonTitle, IonToolbar } from '@ionic/angular/standalone';
-import { HttpClient } from '@angular/common/http';
 import { Router, RouterLinkWithHref } from '@angular/router';
-import { Browser } from '@capacitor/browser';
 import { Storage } from '@ionic/storage-angular';
 
 @Component({

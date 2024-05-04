@@ -28,11 +28,11 @@ export class RestaurantsPage implements OnInit {
 
   getData() {
     this.type = history.state.type; 
-    const url = 'assets/json/places.json'; 
+    const url = 'https://www.jsonblob.com/api/jsonBlob/1236060427271397376'; 
     this.http.get<any>(url).subscribe(data => {
       this.places = data.places.restaurants; 
       console.log(this.places);
-
+alert("ffrom online");
     });
   }
 
