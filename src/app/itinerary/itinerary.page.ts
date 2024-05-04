@@ -103,9 +103,8 @@ export class ItineraryPage {
       switch (randomNumber) {
         case 1:
           this.landmarksChoice = "Kylemore Abbey";
-
           this.landmarkDescription = "Venture out to Kylemore Abbey! Surrounded by lush greenery, this historic site offers a glimpse into Ireland's past. Explore the beautiful gardens and capture memorable moments against the abbey's majestic backdrop.";
-          this.landmarkImage = "https://i.pinimg.com/oyriginals/ab/46/10/ab461063aad4d54b3d50b52a9b99ad12.jpg"
+          this.landmarkImage = "https://i.pinimg.com/originals/ab/46/10/ab461063aad4d54b3d50b52a9b99ad12.jpg"
 
           break;
         case 2:

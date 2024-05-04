@@ -1,16 +1,16 @@
 .header-title {
     font-size: 24px;
     font-weight: bold;
-    color: #333; /* Choose appropriate color */
+    color: #333; 
   }
   
   .content-container {
     padding: 20px;
   }
   .questions{
-    margin-left: 10px; /* Adjust the value according to your preference */
-    margin-right: 10px; /* Adjust the value according to your preference */
-  
+    margin-left: 10px; 
+    margin-right: 10px; 
+    font-weight: bold;
 }
   
   .question-container {
@@ -18,9 +18,8 @@
   }
   
   .question {
-    font-size: 18px;
-    color: #555; /* Choose appropriate color */
-    margin-bottom: 10px;
+    margin-left: 10px; 
+    margin-right: 10px; 
   }
   
   .radio-group {
@@ -29,7 +28,7 @@
   
   .save-button {
     margin-top: 20px;
-    background-color: #007bff; /* Choose appropriate color */
-    color: #fff; /* Choose appropriate color */
+    background-color: #007bff; 
+    color: #fff; 
   }
   

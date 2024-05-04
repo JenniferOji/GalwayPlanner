@@ -22,9 +22,9 @@
             <ion-card-title>{{ place.name }}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <img [src]="img(place.name)" width="300" height="150">
-            <p> Location:   {{ place.location }} </p>
-            <p> Description:   {{ place.cuisine }}</p>
+            <img [src]="img(place.name)" width="300" height="150" style="border: 4px solid grey;">
+            <p><b> Location:</b> {{ place.location }} </p>
+            <p> <b>Description:</b> {{ place.description }}</p>
             <ion-button (click)="show(place)">{{ place.hidden ? 'See Less' : 'See More' }}</ion-button>
             <p *ngIf="place.hidden">{{ place.expanded }}
               <ion-button expand="block" (click)="openBrowser(place.name)">See Reviews</ion-button>

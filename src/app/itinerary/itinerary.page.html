@@ -24,7 +24,7 @@
         <ion-card-content>
           <p>{{cafeChoice}}</p>
           <p>{{cafeDescription}}</p>
-          <img *ngIf="cafeImage" [src]="cafeImage" alt="cafe Image" width="300" height="150">
+          <img *ngIf="cafeImage" [src]="cafeImage" alt="cafe Image" width="300" height="150" style="border: 4px solid grey;">
           <br>
         </ion-card-content>
       </ion-card>
@@ -41,7 +41,7 @@
           <ion-card-content>
             <p>{{landmarksChoice}}</p>
             <p>{{landmarkDescription}}</p>
-            <img *ngIf="landmarkImage" [src]="landmarkImage" alt="Landmark Image" width="300" height="150">
+            <img *ngIf="landmarkImage" [src]="landmarkImage" alt="Landmark Image" width="300" height="150" style="border: 4px solid grey;">
             <br>
           </ion-card-content>
         </ion-card>
@@ -57,7 +57,7 @@
           <ion-card-content>
             <p>{{resturauntChoice}}</p>
             <p>{{resturauntDescription}}</p>
-            <img *ngIf="resturauntImage" [src]="resturauntImage" alt="resturaunt Image" width="300" height="150">
+            <img *ngIf="resturauntImage" [src]="resturauntImage" alt="resturaunt Image" width="300" height="150" style="border: 4px solid grey;">
             <br>
           </ion-card-content>
         </ion-card>
@@ -73,7 +73,7 @@
           <ion-card-content>
             <p>{{activityChoice}}</p>
             <p>{{activityDescription}}</p>
-            <img *ngIf="activityImage" [src]="activityImage" alt="activity Image" width="300" height="150">
+            <img *ngIf="activityImage" [src]="activityImage" alt="activity Image" width="300" height="150" style="border: 4px solid grey;">
             <br>
           </ion-card-content>
         </ion-card>
@@ -89,13 +89,13 @@
           <ion-card-content>
             <p>{{eveningChoice}}</p>
             <p>{{eveningDescription}}</p>
-            <img *ngIf="eveningImage" [src]="eveningImage" alt="evening Image" width="300" height="150">
+            <img *ngIf="eveningImage" [src]="eveningImage" alt="evening Image" width="300" height="150" style="border: 4px solid grey;">
             <br>
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
+  <ion-button [routerLink]="['/home']" expand="block" style="margin-left: 20px; margin-right: 20px;">Back to Home</ion-button>
   <br>
-
 </ion-content>

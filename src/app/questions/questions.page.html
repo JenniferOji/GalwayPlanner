@@ -14,7 +14,7 @@
     </ion-toolbar>
   </ion-header>
   <h5 class="questions">Question 1</h5>
-  <p class="questions">Are you more drawn to historical landmarks or natural attractions</p>
+  <p class="question">Are you more drawn to historical landmarks or natural attractions</p>
   <ion-radio-group [(ngModel)]="myStatus">
     <ion-item>
       <ion-label>Historical</ion-label>
@@ -27,61 +27,61 @@
   </ion-radio-group>
   <br>
   <h5 class="questions">Question 2</h5>
-  <h6 class="questions">Are you adventurous when it comes to trying new cuisines or do you prefer sticking to
+  <h6 class="question">Are you adventurous when it comes to trying new cuisines or do you prefer sticking to
     familiar dishes?</h6>
-    <ion-radio-group [(ngModel)]="myStatus2">
-      <ion-item>
-        <ion-label>Adventurous</ion-label>
-        <ion-radio slot="end" value="adventurous"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>Familiar</ion-label>
-        <ion-radio slot="end" value="familiar"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
-    <br>
-    <h5 class="questions">Question 3</h5>
-    <h6 class="questions">Are you more inclined towards outdoor activities, or do you prefer
-       indoor experiences?</h6>
-      <ion-radio-group [(ngModel)]="myStatus3">
-        <ion-item>
-          <ion-label>Outdoor</ion-label>
-          <ion-radio slot="end" value="outdoor"></ion-radio>
-        </ion-item>
-        <ion-item>
-          <ion-label>Indoor</ion-label>
-          <ion-radio slot="end" value="indoor"></ion-radio>
-        </ion-item>
-      </ion-radio-group>
-      <br>
-      <h5 class="questions">Question 4</h5>
-      <h6 class="questions">Would you rather have a cozy evening or enjoy the nightlife?</h6>
-       <ion-radio-group [(ngModel)]="myStatus4">
-         <ion-item>
-           <ion-label>Cozy</ion-label>
-           <ion-radio slot="end" value="cozy"></ion-radio>
-         </ion-item>
-         <ion-item>
-           <ion-label>Nightlife</ion-label>
-           <ion-radio slot="end" value="nightlife"></ion-radio>
-         </ion-item>
-       </ion-radio-group>
-       <br>
-       <h5 class="questions">Question 5</h5>
-       <h6 class="questions">Would you prefer to discover a hidden gem café or opt for a more well-known establishment?</h6>
-        <ion-radio-group [(ngModel)]="myStatus5">
-          <ion-item>
-            <ion-label>Hidden Gem</ion-label>
-            <ion-radio slot="end" value="hidden"></ion-radio>
-          </ion-item>
-          <ion-item>
-            <ion-label>Well-Known</ion-label>
-            <ion-radio slot="end" value="known"></ion-radio>
-          </ion-item>
-        </ion-radio-group>
-        <br>
-       <ion-button expand="block" (click)="saveStatus()">Save</ion-button>
- 
+  <ion-radio-group [(ngModel)]="myStatus2">
+    <ion-item>
+      <ion-label>Adventurous</ion-label>
+      <ion-radio slot="end" value="adventurous"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Familiar</ion-label>
+      <ion-radio slot="end" value="familiar"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  <br>
+  <h5 class="questions">Question 3</h5>
+  <h6 class="question">Are you more inclined towards outdoor activities, or do you prefer
+    indoor experiences?</h6>
+  <ion-radio-group [(ngModel)]="myStatus3">
+    <ion-item>
+      <ion-label>Outdoor</ion-label>
+      <ion-radio slot="end" value="outdoor"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Indoor</ion-label>
+      <ion-radio slot="end" value="indoor"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  <br>
+  <h5 class="questions">Question 4</h5>
+  <h6 class="question">Would you rather have a cozy evening or enjoy the nightlife?</h6>
+  <ion-radio-group [(ngModel)]="myStatus4">
+    <ion-item>
+      <ion-label>Cozy</ion-label>
+      <ion-radio slot="end" value="cozy"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nightlife</ion-label>
+      <ion-radio slot="end" value="nightlife"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  <br>
+  <h5 class="questions">Question 5</h5>
+  <h6 class="question">Would you prefer to discover a hidden gem café or opt for a more well-known establishment?</h6>
+  <ion-radio-group [(ngModel)]="myStatus5">
+    <ion-item>
+      <ion-label>Hidden Gem</ion-label>
+      <ion-radio slot="end" value="hidden"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Well-Known</ion-label>
+      <ion-radio slot="end" value="known"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  <br>
+  <ion-button expand="block" (click)="saveStatus()" style="margin-left: 20px; margin-right: 20px;">Save</ion-button>
+  <br>
   <h4></h4>
   <h4></h4>
 </ion-content>

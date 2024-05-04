@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 import { RouterLinkWithHref } from '@angular/router';
 import { Browser } from '@capacitor/browser';
 
+
 @Component({
   selector: 'app-landmarks',
   templateUrl: './landmarks.page.html',
@@ -29,7 +30,8 @@ export class LandmarksPage implements OnInit {
 
   getData() {
     this.type = history.state.type; 
-    const url = 'https://www.jsonblob.com/api/jsonBlob/1236060427271397376'; 
+    //https://www.jsonblob.com/1236431268022706176
+    const url = 'https://www.jsonblob.com/api/jsonBlob/1236431268022706176'; 
     this.http.get<any>(url).subscribe(data => {
       this.places = data.places.landmarks; 
       console.log(this.places);
