@@ -1,39 +1,7 @@
 
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-.centre {
-  text-align: center; 
-}
-
 .oval-button {
-  width: 180px; /* Adjust the width as needed */
-  height: 50px; /* Adjust the height as needed */
-  --border-radius: 999px; /* Half of the height to create an oval shape */
+  width: 180px; 
+  height: 50px; 
+  --border-radius: 999px; 
 }
 

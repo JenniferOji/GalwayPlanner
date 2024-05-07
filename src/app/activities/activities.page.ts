@@ -6,6 +6,7 @@ IonItem, IonLabel, IonList, IonRow, IonTitle, IonToolbar } from '@ionic/angular/
 import { HttpClient } from '@angular/common/http';
 import { RouterLinkWithHref } from '@angular/router';
 import { Browser } from '@capacitor/browser';
+import { TabsNavComponent } from '../tabs-nav/tabs-nav.component';
 
 @Component({
   selector: 'app-activities',
@@ -13,7 +14,7 @@ import { Browser } from '@capacitor/browser';
   styleUrls: ['./activities.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons, IonBackButton, RouterLinkWithHref,
-    IonList, IonItem, IonLabel, IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonGrid, IonRow, IonCol, IonGrid, IonButton]
+    IonList, IonItem, IonLabel, IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonGrid, IonRow, IonCol, IonGrid, IonButton, TabsNavComponent]
   })
 export class ActivitiesPage implements OnInit {
 
@@ -28,6 +29,7 @@ export class ActivitiesPage implements OnInit {
     this.getData();
   }
 
+  //getting data from the external json url 
   getData() {
     this.type = history.state.type; 
     const url = 'https://www.jsonblob.com/api/jsonBlob/1236431268022706176'; 
@@ -38,24 +40,25 @@ export class ActivitiesPage implements OnInit {
     });
   }
 
+  //if the place name from the json file matches the string in the method call it falls into their aloocated namespace 
   img(placeName: string): string {
     if (placeName === 'Galway City Museum') {
-      return 'https://th.bing.com/th/id/OIP._8vjD-S5T41Zeqc0AySIZgHaE8?rs=1&pid=ImgDetMain';
+      return 'assets/images/activities/museum.jpg';
     } 
     else if (placeName === 'Wildlands Galway') {
-      return 'https://scdn.aro.ie/Sites/50/wildlands2020/uploads/images/panelsquareimages44/panelimagessquaresmall31/zip-n-trek-panel.png';
+      return 'assets/images/activities/wildlands.png';
     } 
     else if (placeName === 'Great Escape Rooms'){
-      return 'https://fatamorgana.es/content/images/21/720x432e90nn0/90531511133458.jpg'
+      return 'assets/images/activities/rooms.jpg'
     }
     else if (placeName === 'Electric Nightclub'){
-      return 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/42/5f/75/you-can-chill-out-in.jpg?w=1200&h=-1&s=1'
+      return 'assets/images/activities/electric.jpg'
     } 
     else if (placeName === 'Palas'){
-      return 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/58/cc/23/palas-located-in-the.jpg?w=1200&h=-1&s=1'
+      return 'assets/images/activities/palas.jpg'
     }
     else if (placeName === 'River Corrib Kayaking'){
-      return 'https://www.connemarawildescapes.ie/wp-content/uploads/2021/08/kayaking-on-the-river-corrib-galway-city-H1.webp'
+      return 'assets/images/activities/kayaking.jpg'
     }
     else {
       return ''; 
@@ -66,6 +69,7 @@ export class ActivitiesPage implements OnInit {
     place.hidden = !place.hidden;
   }
 
+    //if the place name from the json file matches the string in the method call it falls into their aloocated namespace 
   openBrowser(placeName: string): void {
     try {
       if (placeName === 'Galway City Museum') {
@@ -83,7 +87,7 @@ export class ActivitiesPage implements OnInit {
           url: 'https://www.tripadvisor.ie/Attraction_Review-g186609-d8692835-Reviews-Great_Escape_Rooms-Galway_County_Galway_Western_Ireland.html'
         });
       }
-      if(placeName === 'Electric'){
+      if(placeName === 'Electric Nightclub'){
         Browser.open({
           url: 'https://www.tripadvisor.ie/Attraction_Review-g186609-d7264273-Reviews-Electric-Galway_County_Galway_Western_Ireland.html'
         });

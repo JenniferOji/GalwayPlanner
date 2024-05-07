@@ -42,37 +42,37 @@
             {
                 "name": "An Pucan",
                 "location": "Galway City",
-                "cuisine": "Irish, Bar, European, Pub",
+                "description": "Irish, Bar, European, Pub",
                 "expanded": "The award-winning An Púcán is a real crowd-pleaser. Found just off the iconic Eyre Square, on Forster Street, this bar has been drawing crowds for a long time, thanks to its delicious grub, cracking cocktails, and unforgettable atmosphere."
             },
             {
                 "name": "Oscars",
                 "location": "Galway City",
-                "cuisine": "Local cuisine, Irish, Seafood, Healthy",
+                "description": "Local cuisine, Irish, Seafood, Healthy",
                 "expanded": "Oscars is a perfect bistro to enjoy a selection of real local foods in particular the Seafood freshly caught off the coast of Galway and sourced from local fishermen and the best of Galways fishmongers."
             },
             {
                 "name": "The Cellar Bar and Resturaunt",
                 "location": "Galway City",
-                "cuisine": "Irish cuisine, Bar, Vegetarian Friendly",
+                "description": "Irish cuisine, Bar, Vegetarian Friendly",
                 "expanded": "The Cellar Bar has grown into a local favorite, with the emphasis being on comfort, value and entertainment. The Cellar Bar’s famous food menu offers a diverse range of meals for every taste and budget, and will ensure you never leave hungry."
             },
             {
                 "name": "The Jungle Cafe",
                 "location": "Galway City",
-                "cuisine": "Cafe, Quick Bites",
+                "description": "Cafe, Quick Bites",
                 "expanded": "Step into a lush, jungle-inspired ambiance where every corner reveals delightful surprises. Enjoy freshly brewed artisanal coffee, mouthwatering pastries, and delectable light bites. Perfect for catching up with friends or unwinding after a busy day. Let the urban jungle adventure begin!"
             },
             {
                 "name": "Cafe Nero",
                 "location": "Galway City",
-                "cuisine": "Cafe, European",
+                "description": "Cafe, European",
                 "expanded": "Experience the warmth of Italian hospitality in the heart of Galway. Indulge in rich espresso blends, expertly crafted pastries, and savory sandwiches. Whether you're seeking a quick caffeine fix or a cozy spot to linger over a book, Café Nero offers the perfect retreat. Join us for a taste of la dolce vita!"
             },
             {
                 "name": "Tomodachi",
                 "location": "Galway City",
-                "cuisine": "Sushi, Japanese",
+                "description": "Sushi, Japanese",
                 "expanded": "Tomodachi is a cozy Japanese eatery nestled in the heart of Galway, offering a wide array of authentic Japanese dishes, including sushi, sashimi, ramen, and bento boxes. With its warm ambiance and friendly staff, Tomodachi provides a delightful dining experience that transports guests to the vibrant streets of Japan."
             }
         ],

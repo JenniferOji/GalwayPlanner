@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
     <ion-title>Restaurants</ion-title>
   </ion-toolbar>
@@ -13,6 +13,12 @@
       <ion-title size="large">Restaurants</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card style="width: 320px; height: 60px; margin-left: 20px; margin-right: 20px; margin-bottom: 1px;">
+    <ion-card-content>
+        <app-tabs-nav></app-tabs-nav>
+    </ion-card-content>
+  </ion-card>
 
   <ion-grid>
     <ion-row>

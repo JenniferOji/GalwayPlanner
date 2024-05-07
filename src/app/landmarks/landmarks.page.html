@@ -1,18 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
     <ion-title>Landmarks</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Landmarks</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card style="width: 320px; height: 60px; margin-left: 20px; margin-right: 20px; margin-bottom: 1px;">
+    <ion-card-content>
+        <app-tabs-nav></app-tabs-nav>
+    </ion-card-content>
+  </ion-card>
 
   <ion-grid>
     <ion-row>
@@ -28,7 +35,6 @@
             <ion-button (click)="show(place)">{{ place.hidden ? 'See Less' : 'See More' }}</ion-button>
             <p *ngIf="place.hidden">{{ place.expanded }}
               <ion-button expand="block" (click)="openBrowser(place.name)">See Reviews</ion-button>
-
             </p>
           </ion-card-content>
         </ion-card>

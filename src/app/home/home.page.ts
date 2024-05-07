@@ -12,8 +12,6 @@ import { RouterLinkWithHref } from '@angular/router';
 export class HomePage {
   constructor() {}
 
-  onClick(){
-    alert("hey brother");
-  }
+
 
 }

@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader,
+  IonIcon,
 IonItem, IonLabel, IonList, IonRow, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { HttpClient } from '@angular/common/http';
 import { RouterLinkWithHref } from '@angular/router';
 import { Browser } from '@capacitor/browser';
-
+import { TabsNavComponent } from '../tabs-nav/tabs-nav.component';
 
 @Component({
   selector: 'app-landmarks',
@@ -14,7 +15,7 @@ import { Browser } from '@capacitor/browser';
   styleUrls: ['./landmarks.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons, IonBackButton, RouterLinkWithHref,
-  IonList, IonItem, IonLabel, IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonGrid, IonRow, IonCol, IonGrid, IonButton]
+  IonList, IonItem, IonLabel, IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonGrid, IonRow, IonCol, IonGrid, IonButton, TabsNavComponent]
 })
 export class LandmarksPage implements OnInit {
   places: any;
@@ -41,22 +42,22 @@ export class LandmarksPage implements OnInit {
 
   img(placeName: string): string {
     if (placeName === 'Kylemore Abbey') {
-      return 'https://i.pinimg.com/originals/ab/46/10/ab461063aad4d54b3d50b52a9b99ad12.jpg';
+      return 'assets/images/landmarks/kylemore.jpg';
     } 
     else if (placeName === 'Galway Cathedral') {
-      return 'https://www.agoda.com/wp-content/uploads/2020/02/Galway-Cathedral-things-to-do-in-Galway-Ireland.jpg';
+      return 'assets/images/landmarks/cathedral.jpg';
     }
      else if (placeName === 'Aran Islands'){
-      return 'https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/e23de216-1621-4f09-98a4-769678d2304c/ugc-jdodonncada-na-seacht-dteampaill-aran-islands-galway.jpg'
+      return 'assets/images/landmarks/islands.jpg'
     }
     else if (placeName === 'Connemara National Park'){
-      return 'https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/da37b066-aac9-44fe-b778-6970b6317271/header-connemara-galway.jpg'
+      return 'assets/images/landmarks/park.jpg'
     }
     else if (placeName === 'Lynchs Castle'){
-      return 'https://irishhistory.com/wp-content/uploads/2023/04/Galway-Galway-City-Lynchs-Castle-900x600.jpg'
+      return 'assets/images/landmarks/lynch.jpg'
     }
     else if (placeName === 'Salthill Promenade'){
-      return 'https://www.wildatlanticwayonline.com/wp-content/uploads/2018/04/Salthill-Galway-Wild-Atlantic-Way-11.jpg'
+      return 'assets/images/landmarks/salthill.jpg'
     }
 
     else {
@@ -105,8 +106,6 @@ export class LandmarksPage implements OnInit {
       console.error('Error opening browser:', error);
     }
   }
-  
-  
   
 
 }
