@@ -20,4 +20,4 @@ To run the app, follow these steps:
 2. **Navigate to project directory:** cd GalwayPlanner
 3. **Install dependencies:** npm install
 4. **Run command:** ionic serve 
-5. **Wait for browser to open:** view app while on browser inspect 
+5. **Wait for browser to open:** view app while on inspect mode in browser 
