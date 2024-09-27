@@ -16,7 +16,7 @@ This app serves as the ultimate guide to exploring Galway, Ireland, offering inf
 
 To run the app, follow these steps:
 
-1. **Clone the Repository:** https://github.com/JenniferOji/GalwayPlanner.git
+1. **Clone the Repository:** git clone https://github.com/JenniferOji/GalwayPlanner.git
 2. **Navigate to project directory:** cd GalwayPlanner
 3. **Install dependencies:** npm install
 4. **Run command:** ionic serve 
